@@ -12,13 +12,16 @@ a Mission Bit Group Project for the 2018 Spring Semester
 ## Group Jobs:
 
 ### Aidan
-
+* Figure Out How to Control Zoom In/Out of Map
 
 ### Emi
-
+* Figure Out How to Add and Animate Characters on Map Using JavaScript (See Phaser)
 
 ### Helen
-
+* Help Mary with Homepage
+*
 
 ### Mary
-
+* Make Jobs
+* Create Home Page
+* Full Screen Map
