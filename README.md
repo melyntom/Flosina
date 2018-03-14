@@ -17,6 +17,7 @@ a Mission Bit Group Project for the 2018 Spring Semester
 
 ### Emi
 * Figure Out How to Add and Animate Characters on Map Using JavaScript (See Phaser- Does The Map Need to Be JavaScript?)
+* Get Phaser Up and Running
 *
 
 ### Helen
