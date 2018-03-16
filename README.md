@@ -40,12 +40,12 @@ a Mission Bit Group Project for the 2018 Spring Semester
 
 ### Mary
 
-~~* Make Jobs~~
+* ~~Make Jobs~~
 
-~~* Create Home Page~~
+* ~~Create Home Page~~
 
-~~* Get Phaser Up and Running~~
+* ~~Get Phaser Up and Running~~
 
-~~* Figure Out How to Control Zoom In/Out of Map~~
+* ~~Figure Out How to Control Zoom In/Out of Map~~
 
 * 
