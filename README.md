@@ -15,9 +15,13 @@ a Mission Bit Group Project for the 2018 Spring Semester
 
 * Smooth Map Zooming (with Animation, maybe?)
 
-* Figure Out How To Make Phaser Run Responsively (in Fullscreen)
+* ~~Figure Out How To Make Phaser Run Responsively (in Fullscreen)~~
 
-*
+* Keep Phaser Sprites Running Responsively
+
+* ~~Make Phaser Fullscreen~~
+
+* 
 
 
 ### Aidan
