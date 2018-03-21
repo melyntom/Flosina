@@ -13,6 +13,8 @@ a Mission Bit Group Project for the 2018 Spring Semester
 
 ### A list of things for anyone to work on:
 
+* Get Emi & Apollo Together
+
 * Smooth Map Zooming (with Animation, maybe?)
 
 * ~~Figure Out How To Make Phaser Run Responsively (in Fullscreen)~~
