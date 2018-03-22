@@ -49,3 +49,14 @@ a Mission Bit Group Project for the 2018 Spring Semester
 * ~~Figure Out How to Control Zoom In/Out of Map~~
 
 * 
+
+## Helpful resources
+
+Handling mouse clicks on sprites:
+https://phaser.io/examples/v2/basics/02-click-on-an-image
+
+https://stackoverflow.com/questions/25606006/phaser-attach-touch-event-on-sprite
+
+## Use Keyboard Input to Zoom Into a Particular Area
+
+https://phaser.io/examples/v2/input/keyboard-hotkeys
