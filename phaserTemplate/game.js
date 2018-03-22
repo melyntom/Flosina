@@ -19,6 +19,8 @@ gameState.prototype = {
       
     // game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     // game.scale.setScreenSize(true);
+    game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
+    game.input.onDown.add(goFull, this);
       
     // Add some text
     text = game.add.text(300, 280, '', { fontSize: '32px', fill: '#fff' });
@@ -36,11 +38,15 @@ gameState.prototype = {
       
     // game.debug.text("Left Button: " + this.input.activePointer.leftButton.isDown, 300, 132);
       
-    if (this.input.activePointer.leftButton.isDown) {
+    /* if (this.input.activePointer.leftButton.isDown) {
         map.scale.setTo(1.5);
-    }
+    } */
   }
 };
+
+function goFull() {
+    game.scale.startFullScreen();
+}
 
 // Global variables
 let text;

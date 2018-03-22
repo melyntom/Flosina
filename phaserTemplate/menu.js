@@ -11,6 +11,8 @@ menuState.prototype = {
 
   create: function () {
 
+    game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
+      
     // Add some text
     game.add.text(235, 250, "Press any key to begin", { fontSize: "32px", fill: "#fff" });
 
