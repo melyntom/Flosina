@@ -46,7 +46,7 @@ a Mission Bit Group Project for the 2018 Spring Semester
 
 * ~~Get Phaser Up and Running~~
 
-* ~~Figure Out How to Control Zoom In/Out of Map~~
+* Figure Out How to Control Zoom In/Out of Map
 
 * 
 
