@@ -1,27 +1,40 @@
-// Create the menu state class
-const menuState = function () { };
+/**
+ * menu.js 
+ *
+ * This is the menu state
+ */
+const menuState = {
 
-// Add the create/preload/update functions to the menu class
-menuState.prototype = {
+  /**
+   * Loads game assets (images, sounds, tilemaps, etc)
+   */
   preload : function () {
-    
-    // Load menu assets here
-
   },
 
+  /**
+   * Initializes variables and instantiates objects
+   */
   create: function () {
 
-    game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
-      
-    // Add some text
-    game.add.text(235, 250, "Press any key to begin", { fontSize: "32px", fill: "#fff" });
+    // Enable mouse
+    game.input.mouse.capture = true;
 
-    // Start the game when a key is pressed
-    document.addEventListener("keydown", function (e) {
-      document.removeEventListener("keydown", function (e) { });
-      game.state.start("game");
-    });
+    // Add some text
+    game.add.text(
+      80, 260,  // x, y position
+      "Welcome to the Magickal Kingdom of Flosina!\nPress space to enter.", 
+      { fontSize: "32px", fill: "#fff" }
+    );
   },
 
-  update: function () { }
-};
+  /** 
+   * Updates the screen each frame
+   */
+  update: function () {
+
+    // Check for mouse click and switch state to the game state when
+    if (game.input.keyboard.isDown(Phaser.KeyCode.SPACEBAR)) {
+      game.state.start("game");
+    }
+  }
+}; // end menuState

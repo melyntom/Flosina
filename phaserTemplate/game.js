@@ -1,52 +1,66 @@
 var map;
+var card;
+var cursors;
 
 // Create the main game state class
-const gameState = function () { };
+const gameState = {
 
-// Add the create/preload/update functions to the game class
-gameState.prototype = {
+    preload: function () {
 
-  // Phaser function to load assets (images, sounds, etc)
-  preload: function () {
+        game.load.image('backdrop', 'img/space.jpg');
+        game.load.image('card', 'img/villager.png');
+        
+    },
 
-    /*** Load assets here ***/
-    this.load.image('map', 'img/map.jpg');
-  
-  },
+    create: function () {
 
-  // Phaser function to initialize variables and instantiate objects
-  create: function () {
-      
-    // game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-    // game.scale.setScreenSize(true);
-    game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
-    game.input.onDown.add(goFull, this);
-      
-    // Add some text
-    text = game.add.text(300, 280, '', { fontSize: '32px', fill: '#fff' });
-      
-    map = this.add.sprite(0, 0, 'map');
-      
-    this.input.mouse.capture = true;
-  },
+        // todo: set to backdrop dimensions
+        game.world.setBounds(0, 0, 1920, 1200);
 
-  // Phaser main game function to update the screen
-  update: function () {
-      
-    // Show mouse coordinates for debugging and placing objects
-    // text.setText("X: " + game.input.mousePointer.x + "  Y: " + game.input.mousePointer.y);
-      
-    // game.debug.text("Left Button: " + this.input.activePointer.leftButton.isDown, 300, 132);
-      
-    /* if (this.input.activePointer.leftButton.isDown) {
-        map.scale.setTo(1.5);
-    } */
-  }
+        game.add.sprite(0, 0, 'backdrop');
+
+        card = game.add.sprite(50, 50, 'card');
+
+        game.camera.follow(card);
+
+        cursors = game.input.keyboard.createCursorKeys();
+        
+        console.log({
+            cursors: cursors
+        });
+
+    },
+
+    update: function () {
+
+        if (cursors.left.isDown)
+        {
+            card.x -= 4;
+            console.log("down");
+        }
+        else if (cursors.right.isDown)
+        {
+            card.x += 4;
+        }
+
+        if (cursors.up.isDown)
+        {
+            card.y -= 4;
+        }
+        else if (cursors.down.isDown)
+        {
+            card.y += 4;
+        }
+
+        game.world.wrap(card, 0, true);
+        
+    },
+
+    render: function () {
+
+        game.debug.cameraInfo(game.camera, 500, 32);
+        game.debug.spriteCoords(card, 32, 32);
+
+    }
+
 };
-
-function goFull() {
-    game.scale.startFullScreen();
-}
-
-// Global variables
-let text;
