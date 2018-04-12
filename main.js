@@ -16,6 +16,7 @@ const game = new Phaser.Game(width, height, Phaser.AUTO, "example");
 // Add states to the game
 game.state.add("menu", menuState);
 game.state.add("game", gameState);
+game.state.add("test", testState);
 
 // Start the menu state
 game.state.start("menu");

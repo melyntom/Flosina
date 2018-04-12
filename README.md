@@ -13,30 +13,44 @@ a Mission Bit Group Project for the 2018 Spring Semester
 
 ### A list of things for anyone to work on:
 
-* Smooth Map Zooming (with Animation, maybe?)
-
 * Figure Out How To Make Phaser Run Responsively (in Fullscreen)
+
+* Prevent Map from Looping Over The Edges
+
+*
+
+#### Extras
+
+* Color-Code Parts Explored
 
 *
 
 
 ### Aidan
 
-* 
+* Work w/ Emi to Change Map Screen Upon Entering a New World
+
+* Help Emi w/ Mapping Out The Land
+
+*
 
 ### Emi
 
 * ~~Figure Out How to Add and Animate Characters on Map Using JavaScript (See Phaser- Does The Map Need to Be JavaScript?)~~
 
-* Side Task: Sprites ~~(and Decide How to Animate Them)~~
+* ~~Side Task: Sprites~~ ~~(and Decide How to Animate Them)~~
 
-* 
+* Design Map
 
-### Helen
+* Look Into Utilizing Example Code w/ Mary
 
-* ~~Help Mary with Homepage~~
+* Crop the Empty Space Out of Sprite Images
 
 *
+
+~~Helen~~
+
+* ~~Help Mary with Homepage~~
 
 ### Mary
 
@@ -46,9 +60,11 @@ a Mission Bit Group Project for the 2018 Spring Semester
 
 * ~~Get Phaser Up and Running~~
 
-* Figure Out How to Control Zoom In/Out of Map
+* Solve Existing Issues and Bugs with Current Code
 
-* 
+* Make Fullscrren
+
+*
 
 ## Helpful resources
 
@@ -61,3 +77,6 @@ https://stackoverflow.com/questions/25606006/phaser-attach-touch-event-on-sprite
 
 https://phaser.io/examples/v2/input/keyboard-hotkeys
 
+## Example Code: Moving Around a Map
+
+http://phaser.io/examples/v2/world/world-wrap

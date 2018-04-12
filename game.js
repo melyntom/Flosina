@@ -8,20 +8,33 @@ const gameState = {
     preload: function () {
 
         game.load.image('backdrop', 'img/space.jpg');
-        game.load.image('card', 'img/villager.png');
+        game.load.image('button', 'img/villager.png');
         
     },
 
     create: function () {
 
         // todo: set to backdrop dimensions
-        game.world.setBounds(0, 0, 1920, 1200);
+        // game.world.setBounds(0, 0, , 1200);
 
         game.add.sprite(0, 0, 'backdrop');
 
         card = game.add.sprite(50, 50, 'card');
+        
+        card.scale.setTo(0.1, 0.1);
 
-        game.camera.follow(card);
+        // game.camera.follow();
+        
+        // Add the button image to the middle of the screen and enable input
+        const button = game.add.sprite(game.world.centerX, game.world.centerY, 'button');
+        button.anchor.set(0.5);
+        button.inputEnabled = true;
+        button.input.useHandCursor = true;  // Change cursor style on mouseover
+
+        // Add a function to the button to be called when the button is clicked
+        button.events.onInputDown.add(function () {
+            game.state.start('test');
+        }, this);
 
         cursors = game.input.keyboard.createCursorKeys();
         
