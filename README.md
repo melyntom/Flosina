@@ -44,8 +44,6 @@ a Mission Bit Group Project for the 2018 Spring Semester
 
 * Look Into Utilizing Example Code w/ Mary
 
-* Crop the Empty Space Out of Sprite Images
-
 *
 
 ~~Helen~~
