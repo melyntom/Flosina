@@ -15,24 +15,28 @@ a Mission Bit Group Project for the 2018 Spring Semester
 
 * Figure Out How To Make Phaser Run Responsively (in Fullscreen)
 
-* Prevent Map from Looping Over The Edges
+* Work on Oceana State
 
-*
+* 
 
 #### Extras
 
 * Color-Code Parts Explored
+
+* Panning Around to Explore Map
 
 *
 
 
 ### Aidan
 
-* Work w/ Emi to Change Map Screen Upon Entering a New World
-
 * Help Emi w/ Mapping Out The Land
 
-*
+* Make Fullscreen
+
+* Work on Sky State
+
+* 
 
 ### Emi
 
@@ -42,11 +46,13 @@ a Mission Bit Group Project for the 2018 Spring Semester
 
 * Design Map
 
-* Look Into Utilizing Example Code w/ Mary
+* ~~Look Into Utilizing Example Code w/ Mary~~
 
 * Crop Blank Space of Sprite Images
 
-*
+* Work on Forest State
+
+* 
 
 ~~Helen~~
 
@@ -54,17 +60,15 @@ a Mission Bit Group Project for the 2018 Spring Semester
 
 ### Mary
 
-* ~~Make Jobs~~
-
-* ~~Create Home Page~~
-
 * ~~Get Phaser Up and Running~~
 
-* Solve Existing Issues and Bugs with Current Code
+* ~~Solve Existing Issues and Bugs with Current Code~~
 
-* Make Fullscrren
+* ~~Work w/ Emi to Change Map Screen Upon Entering a New World~~
 
-*
+* Work on Blurpia State
+
+* 
 
 ## Helpful resources
 
