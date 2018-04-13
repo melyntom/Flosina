@@ -1,4 +1,4 @@
-// Create the main game state class
+// Create the a sample, blank state
 const testState = {
 
     preload: function () {

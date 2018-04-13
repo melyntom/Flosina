@@ -16,6 +16,12 @@ const game = new Phaser.Game(width, height, Phaser.AUTO, "example");
 // Add states to the game
 game.state.add("menu", menuState);
 game.state.add("game", gameState);
+
+game.state.add("blurpia", blurpiaState);
+game.state.add("oceana", oceanaState);
+game.state.add("forest", forestState);
+game.state.add("sky", skyState);
+
 game.state.add("test", testState);
 
 // Start the menu state

@@ -1,5 +1,4 @@
 var map;
-var card;
 var cursors;
 
 // Create the main game state class
@@ -8,7 +7,10 @@ const gameState = {
     preload: function () {
 
         game.load.image('backdrop', 'img/space.jpg');
-        game.load.image('button', 'img/villager.png');
+        game.load.image('blurpia', 'img/blurpia.png');
+        game.load.image('oceana', 'img/oceana.png');
+        game.load.image('forest', 'img/forest.png');
+        game.load.image('sky', 'img/sky.png');
         
     },
 
@@ -19,34 +21,115 @@ const gameState = {
 
         game.add.sprite(0, 0, 'backdrop');
 
-        card = game.add.sprite(50, 50, 'card');
+        // game.camera.follow(card);
         
-        card.scale.setTo(0.1, 0.1);
-
-        // game.camera.follow();
         
-        // Add the button image to the middle of the screen and enable input
-        const button = game.add.sprite(game.world.centerX, game.world.centerY, 'button');
-        button.anchor.set(0.5);
-        button.inputEnabled = true;
-        button.input.useHandCursor = true;  // Change cursor style on mouseover
+        
+        
+        
+/*********************/
+        
+        // Add button to go to Blurpia game state
+        
+        
+        const blurpia = game.add.sprite(game.world.centerX, game.world.centerY, 'blurpia');
+        blurpia.anchor.set(0.5);
+        blurpia.inputEnabled = true;
+        blurpia.input.useHandCursor = true;  // Change cursor style on mouseover
 
         // Add a function to the button to be called when the button is clicked
-        button.events.onInputDown.add(function () {
-            game.state.start('test');
+        blurpia.events.onInputDown.add(function () {
+            game.state.start('blurpia');
         }, this);
+        
+        
+        
+/*********************/
+        
+        
+        
+        
+        
+/*********************/
+        
+        // Add button to go to Oceana game state
+        
+        
+        const oceana = game.add.sprite(100, 100, 'oceana');
+        oceana.anchor.set(0.5);
+        oceana.inputEnabled = true;
+        oceana.input.useHandCursor = true;  // Change cursor style on mouseover
 
+        // Add a function to the button to be called when the button is clicked
+        oceana.events.onInputDown.add(function () {
+            game.state.start('oceana');
+        }, this);
+        
+        
+        
+/*********************/
+        
+
+        
+        
+
+/*********************/
+        
+        // Add button to go to Forest game state
+        
+        
+        const forest = game.add.sprite(100, 400, 'forest');
+        forest.anchor.set(0.5);
+        forest.inputEnabled = true;
+        forest.input.useHandCursor = true;  // Change cursor style on mouseover
+
+        // Add a function to the button to be called when the button is clicked
+        forest.events.onInputDown.add(function () {
+            game.state.start('forest');
+        }, this);
+        
+        
+        
+/*********************/
+
+
+
+
+
+/*********************/
+        
+        // Add button to go to Sky game state
+        
+        
+        const sky = game.add.sprite(600, 100, 'sky');
+        sky.anchor.set(0.5);
+        sky.inputEnabled = true;
+        sky.input.useHandCursor = true;  // Change cursor style on mouseover
+
+        // Add a function to the button to be called when the button is clicked
+        sky.events.onInputDown.add(function () {
+            game.state.start('sky');
+        }, this);
+        
+        
+        
+/*********************/
+        
+        
+        
+        
+        
         cursors = game.input.keyboard.createCursorKeys();
         
         console.log({
             cursors: cursors
         });
-
+        
     },
 
     update: function () {
 
-        if (cursors.left.isDown)
+        /* if (cursors.left.isDown)
         {
             card.x -= 4;
             console.log("down");
@@ -65,15 +148,8 @@ const gameState = {
             card.y += 4;
         }
 
-        game.world.wrap(card, 0, true);
+        game.world.wrap(card, 0, true); */
         
-    },
-
-    render: function () {
-
-        game.debug.cameraInfo(game.camera, 500, 32);
-        game.debug.spriteCoords(card, 32, 32);
-
     }
 
 };
