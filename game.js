@@ -6,7 +6,7 @@ const gameState = {
 
     preload: function () {
 
-        game.load.image('backdrop', 'img/space.jpg');
+        game.load.image('backdrop', 'img/flosina.png');
         game.load.image('blurpia', 'img/blurpia.png');
         game.load.image('oceana', 'img/oceana.png');
         game.load.image('forest', 'img/forest.png');
