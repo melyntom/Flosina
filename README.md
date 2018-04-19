@@ -17,7 +17,9 @@ a Mission Bit Group Project for the 2018 Spring Semester
 
 * Work on Oceana State
 
-* 
+* Make Fullscreen / Larger Map Window
+
+*
 
 #### Extras
 
@@ -31,8 +33,6 @@ a Mission Bit Group Project for the 2018 Spring Semester
 ### Aidan
 
 * Help Emi w/ Mapping Out The Land
-
-* Make Fullscreen
 
 * Work on Sky State
 
