@@ -84,3 +84,5 @@ https://phaser.io/examples/v2/input/keyboard-hotkeys
 ## Example Code: Moving Around a Map
 
 http://phaser.io/examples/v2/world/world-wrap
+
+Ask Emi about spritesheet for animated logo.
