@@ -16,12 +16,10 @@ const gameState = {
 
     create: function () {
 
-        // todo: set to backdrop dimensions
-        // game.world.setBounds(0, 0, , 1200);
+        game.world.setBounds(0, 0, 1920, 1080);
 
         game.add.sprite(0, 0, 'backdrop');
 
-        // game.camera.follow(card);
         
         
         
@@ -32,7 +30,7 @@ const gameState = {
         // Add button to go to Blurpia game state
         
         
-        const blurpia = game.add.sprite(game.world.centerX, game.world.centerY, 'blurpia');
+        const blurpia = game.add.sprite(400, 400, 'blurpia');
         blurpia.anchor.set(0.5);
         blurpia.inputEnabled = true;
         blurpia.input.useHandCursor = true;  // Change cursor style on mouseover
@@ -91,7 +89,7 @@ const gameState = {
         
         
 /*********************/
-
+        
 
 
 
@@ -120,35 +118,40 @@ const gameState = {
         
         
         cursors = game.input.keyboard.createCursorKeys();
-        
-        console.log({
-            cursors: cursors
-        });
-        
+    
     },
+        
+        
+        
+        
+
 
     update: function () {
-
-        /* if (cursors.left.isDown)
-        {
-            card.x -= 4;
-            console.log("down");
+        
+        var x = game.input.mousePointer.x;
+        var y = game.input.mousePointer.y;
+        
+        if (x <= 0 || x >= 800 || y <= 0 || y >= 600) {
+            return;
         }
-        else if (cursors.right.isDown)
-        {
-            card.x += 4;
+        
+        if ((x <= 100)) {
+            // left
+            game.camera.x -= 4;
         }
-
-        if (cursors.up.isDown)
-        {
-            card.y -= 4;
-        }
-        else if (cursors.down.isDown)
-        {
-            card.y += 4;
+        else if ((x >= 700)) {
+            // right
+            game.camera.x += 4;
         }
 
-        game.world.wrap(card, 0, true); */
+        if ((y <= 100)) {
+            // up
+            game.camera.y -= 4;
+        }
+        else if ((y >= 500)) {
+            // down
+            game.camera.y += 4;
+        }
         
     }
 

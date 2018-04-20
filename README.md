@@ -9,6 +9,8 @@ We added "-ina" to make it sound more magical.
 
 a Mission Bit Group Project for the 2018 Spring Semester
 
+# If you're working on a game state, see notes.md for checklist
+
 ## Group Jobs:
 
 ### A list of things for anyone to work on:
@@ -19,7 +21,9 @@ a Mission Bit Group Project for the 2018 Spring Semester
 
 * Make Fullscreen / Larger Map Window
 
-*
+* Add Sprites to States
+
+* 
 
 #### Extras
 
