@@ -10,7 +10,7 @@ const blurpiaState = {
         game.load.image('backdrop', 'img/blurpiaKingdom.png');
         game.load.image('map', 'img/main.png');
         
-        game.load.spritesheet('logo', 'img/flosinaLogo.png', 200, 200, 28);
+        game.load.spritesheet('mellie', 'img/charMellie.png', 32, 32, 13);
         
     },
 
@@ -18,6 +18,8 @@ const blurpiaState = {
         
         game.add.sprite(0, 0, 'backdrop');
         console.log("Blurple!");
+        
+        game.add.sprite(400, 400, 'mellie');
         
         // Add button to go to back to Map
         

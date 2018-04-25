@@ -5,7 +5,7 @@ const forestState = {
 
     preload: function () {
 
-        game.load.image('backdrop', 'img/forestKingdom.jpg');
+        game.load.image('backdrop', 'img/forestKingdom.png');
         game.load.image('map', 'img/main.png');
         
     },

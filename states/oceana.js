@@ -5,7 +5,7 @@ const oceanaState = {
 
     preload: function () {
 
-        game.load.image('backdrop', 'img/oceanaKingdom.jpg');
+        game.load.image('backdrop', 'img/oceanaKingdom.png');
         game.load.image('map', 'img/main.png');
         
     },

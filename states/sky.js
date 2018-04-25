@@ -5,7 +5,7 @@ const skyState = {
 
     preload: function () {
 
-        game.load.image('backdrop', 'img/skyKingdom.jpg');
+        game.load.image('backdrop', 'img/skyKingdom.png');
         game.load.image('map', 'img/main.png');
         
     },
