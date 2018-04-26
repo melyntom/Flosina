@@ -19,7 +19,8 @@ const blurpiaState = {
         game.add.sprite(0, 0, 'backdrop');
         console.log("Blurple!");
         
-        game.add.sprite(400, 400, 'mellie');
+        var mellie = game.add.sprite(400, 400, 'mellie');
+        mellie.scale.setTo(4, 4);
         
         // Add button to go to back to Map
         
