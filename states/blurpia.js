@@ -10,20 +10,20 @@ const blurpiaState = {
         game.load.image('backdrop', 'img/blurpiaKingdom.png');
         game.load.image('map', 'img/main.png');
         
-        game.load.spritesheet('mellie', 'img/Mellie.png', 32, 32, 13);
+        game.load.spritesheet('mellie', 'img/Mellie.png', 250, 250, 13);
         
     },
 
     create: function () {
         
+        // Set backdrop
         game.add.sprite(0, 0, 'backdrop');
         console.log("Blurple!");
         
-        var mellie = game.add.sprite(400, 400, 'mellie');
-        mellie.scale.setTo(4, 4);
+        // Add Mellie character
+        var mellie = game.add.sprite(100, 320, 'mellie');
         
         // Add button to go to back to Map
-        
         const map = game.add.sprite(50, 50, 'map');
         map.anchor.set(0.5);
         map.inputEnabled = true;
