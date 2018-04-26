@@ -10,7 +10,7 @@ const blurpiaState = {
         game.load.image('backdrop', 'img/blurpiaKingdom.png');
         game.load.image('map', 'img/main.png');
         
-        game.load.spritesheet('mellie', 'img/charMellie.png', 32, 32, 13);
+        game.load.spritesheet('mellie', 'img/Mellie.png', 32, 32, 13);
         
     },
 
