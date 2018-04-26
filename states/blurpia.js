@@ -2,6 +2,7 @@
 // Home to Queen Melynda (a.k.a. Mellie)
 
 var logo;
+var mellie;
 
 const blurpiaState = {
 
@@ -21,7 +22,7 @@ const blurpiaState = {
         console.log("Blurple!");
         
         // Add Mellie character
-        var mellie = game.add.sprite(100, 320, 'mellie');
+        mellie = game.add.sprite(100, 320, 'mellie');
         
         // Add button to go to back to Map
         const map = game.add.sprite(50, 50, 'map');
@@ -30,6 +31,14 @@ const blurpiaState = {
         map.input.useHandCursor = true;  // Change cursor style on mouseover
         
         
+        
+        const mellieFrames = [];
+        
+        for (let i = 1; i < 29; i++) {
+            mellieFrames.push(i);
+        }
+        
+        mellie.animations.add('play', mellieFrames, 10, true);
         
         
         
@@ -64,7 +73,7 @@ const blurpiaState = {
 
     update: function () {
 
-        
+        mellie.animations.play('play');
         
     }
 
