@@ -30,39 +30,14 @@ const blurpiaState = {
         map.inputEnabled = true;
         map.input.useHandCursor = true;  // Change cursor style on mouseover
         
-        
-        
+        // Add Mellie animations
         const mellieFrames = [];
         
-        for (let i = 1; i < 29; i++) {
+        for (let i = 1; i < 14; i++) {
             mellieFrames.push(i);
         }
         
         mellie.animations.add('play', mellieFrames, 10, true);
-        
-        
-        
-        
-/********************* Test Logo Animation */
-        
-        // logo = game.add.sprite(game.world.centerX, game.world.centerY, 'logo');
-        
-        /* const logoFrames = [];
-        
-        for (let i = 1; i < 29; i++) {
-            logoFrames.push(i);
-        }
-        
-        logo.animations.add('play', logoFrames, 10, true);
-        
-        logo.animations.play('play'); */
-        
-        
-/*********************/
-        
-        
-        
-        
 
         // Add a function to the button to be called when the button is clicked
         map.events.onInputDown.add(function () {
@@ -73,6 +48,7 @@ const blurpiaState = {
 
     update: function () {
 
+        // Animate char: Mellie
         mellie.animations.play('play');
         
     }
