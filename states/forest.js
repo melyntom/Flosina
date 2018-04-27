@@ -32,7 +32,7 @@ const forestState = {
         const LilyFrames = [];
         
         for (let i = 1; i < 14; i++) {
-            LilyFrames.push(i);
+            lilyFrames.push(i);
         }
         
         lily.animations.add('play', lilyFrames, 10, true);
