@@ -8,6 +8,9 @@ const menuState = {
    * Loads game assets (images, sounds, tilemaps, etc)
    */
   preload : function () {
+      
+      game.load.spritesheet('logo', 'img/MagicalCrystal.png', 500, 500, 28);
+      
   },
 
   /**
@@ -25,8 +28,8 @@ const menuState = {
       { fontSize: "32px", fill: "#fff" }
     );
       
-    // Add Mellie character
-        logo = game.add.sprite(200, 200, 'logo');
+    // Add logo
+    logo = game.add.sprite(200, 200, 'logo');
       
   },
 
