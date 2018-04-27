@@ -7,8 +7,8 @@
 
 // Global variables
 let text;
-const width = 700;
-const height = 500;
+const width = 800;
+const height = 600;
 
 // Create the Phaser game object
 const game = new Phaser.Game(width, height, Phaser.AUTO, "example");

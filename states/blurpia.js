@@ -16,7 +16,7 @@ const blurpiaState = {
 
     create: function () {
         
-        game.world.setBounds(0, 0, 1920, 1080);
+        game.world.setBounds(0, 0, 1042, 666);
         
         // Set backdrop
         game.add.sprite(0, 0, 'backdrop');

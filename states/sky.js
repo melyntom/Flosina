@@ -1,6 +1,8 @@
 // The Sky Sub-Kingdom
 // Home to Aidan's Character
 
+var angelw;
+
 const skyState = {
 
     preload: function () {
@@ -13,6 +15,8 @@ const skyState = {
     },
 
     create: function () {
+        
+        game.world.setBounds(0, 0, 1042, 666);
         
         game.add.sprite(0, 0, 'backdrop');
         console.log("Sky!");
@@ -39,11 +43,38 @@ const skyState = {
         }   
         
         angelw.animations.add('play', angelwFrames, 10, true);
+        
+    },
             
     update: function () {
 
         // Animate char: Angel WIngs
-        angelw.animations.play('play');      
+        angelw.animations.play('play');
+        
+        var x = game.input.mousePointer.x;
+        var y = game.input.mousePointer.y;
+        
+        if (x <= 0 || x >= 800 || y <= 0 || y >= 600) {
+            return;
+        }
+        
+        if ((x <= 100)) {
+            // left
+            game.camera.x -= 4;
+        }
+        else if ((x >= 700)) {
+            // right
+            game.camera.x += 4;
+        }
+
+        if ((y <= 100)) {
+            // up
+            game.camera.y -= 4;
+        }
+        else if ((y >= 500)) {
+            // down
+            game.camera.y += 4;
+        }
         
     }
 
