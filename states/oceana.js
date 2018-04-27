@@ -1,12 +1,16 @@
 // The Underwater Sub-Kingdom of Oceana
 // Home to Mia the Mermaid / Siren
 
+var mia;
+
 const oceanaState = {
 
     preload: function () {
 
         game.load.image('backdrop', 'img/oceanaKingdom.png');
         game.load.image('map', 'img/main.png');
+        
+        game.load.spritesheet('mia', 'img/MermaidHelen.png', 256, 256, 13);
         
     },
 
@@ -17,12 +21,24 @@ const oceanaState = {
         game.add.sprite(0, 0, 'backdrop');
         console.log("Oceana!");
         
+        // Add Mia character
+        mia = game.add.sprite(100, 320, 'mia');
+        
         // Add button to go to back to Map
         
         const map = game.add.sprite(50, 50, 'map');
         map.anchor.set(0.5);
         map.inputEnabled = true;
         map.input.useHandCursor = true;  // Change cursor style on mouseover
+        
+        // Add Mia animations
+        const miaFrames = [];
+        
+        for (let i = 1; i < 14; i++) {
+            miaFrames.push(i);
+        }
+        
+        mia.animations.add('play', miaFrames, 10, true);
 
         // Add a function to the button to be called when the button is clicked
         map.events.onInputDown.add(function () {
@@ -33,6 +49,9 @@ const oceanaState = {
 
     update: function () {
 
+        // Animate char: Mia
+        mia.animations.play('play');
+        
         var x = game.input.mousePointer.x;
         var y = game.input.mousePointer.y;
         
