@@ -10,7 +10,7 @@ const forestState = {
         game.load.image('backdrop', 'img/forestKingdom.png');
         game.load.image('map', 'img/main.png');
         
-        game.load.spritesheet('lily', 'img/Lily.png', 32, 32, 13);
+        game.load.spritesheet('lily', 'img/Lily.png', 250, 250, 13);
     },
     
     create: function () {
