@@ -29,7 +29,7 @@ const forestState = {
         map.input.useHandCursor = true;  // Change cursor style on mouseover
         
         // Add Lily animations
-        const LilyFrames = [];
+        const lilyFrames = [];
         
         for (let i = 1; i < 14; i++) {
             lilyFrames.push(i);
