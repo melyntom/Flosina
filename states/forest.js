@@ -10,7 +10,7 @@ const forestState = {
         game.load.image('backdrop', 'img/forestKingdom.png');
         game.load.image('map', 'img/main.png');
         
-        game.load.spritesheet('lily', 'img/Lily.png', 250, 250, 13);
+        game.load.spritesheet('lily', 'img/Lily.png', 256, 256, 12);
     },
     
     create: function () {
@@ -33,11 +33,11 @@ const forestState = {
         // Add Lily animations
         const lilyFrames = [];
         
-        for (let i = 1; i < 14; i++) {
+        for (let i = 1; i <= 12; i++) {
             lilyFrames.push(i);
         }
         
-        lily.animations.add('play', lilyFrames, 13, true);
+        lily.animations.add('play', lilyFrames, 10, true);
 
         // Add a function to the button to be called when the button is clicked
         map.events.onInputDown.add(function () {
