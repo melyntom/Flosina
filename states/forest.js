@@ -35,7 +35,7 @@ const forestState = {
             lilyFrames.push(i);
         }
         
-        lily.animations.add('play', lilyFrames, 10, true);
+        lily.animations.add('play', lilyFrames, 13, true);
 
         // Add a function to the button to be called when the button is clicked
         map.events.onInputDown.add(function () {
