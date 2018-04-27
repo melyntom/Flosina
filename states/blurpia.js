@@ -1,7 +1,6 @@
 // The Magickal Sub-Kingdom Blurpia
 // Home to Queen Melynda (a.k.a. Mellie)
 
-var logo;
 var mellie;
 
 const blurpiaState = {

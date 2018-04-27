@@ -1,8 +1,7 @@
-/**
- * menu.js 
- *
- * This is the menu state
- */
+// This is the menu state
+
+var logo;
+
 const menuState = {
 
   /**
@@ -25,6 +24,10 @@ const menuState = {
       "Welcome to the Magickal Kingdom of Flosina!\nPress space to enter.", 
       { fontSize: "32px", fill: "#fff" }
     );
+      
+    // Add Mellie character
+        logo = game.add.sprite(200, 200, 'logo');
+      
   },
 
   /** 
