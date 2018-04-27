@@ -10,7 +10,7 @@ const skyState = {
         game.load.image('backdrop', 'img/skyKingdom.png');
         game.load.image('map', 'img/main.png');
         
-         game.load.spritesheet('angelw', 'img/AngelWings.png', 32, 32, 13);
+         game.load.spritesheet('angelw', 'img/AngelWings.png', 256, 256, 13);
         
     },
 
