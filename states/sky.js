@@ -1,16 +1,14 @@
 // The Sky Sub-Kingdom
 // Home to Aidan's Character
 
-var angelw;
-
 const skyState = {
 
     preload: function () {
 
-        game.load.image('backdrop', 'img/skyKingdom.png');
+        game.load.image('backdrop', 'img/skyKingdom.jpg');
         game.load.image('map', 'img/main.png');
         
-         game.load.spritesheet('angelw', 'img/AngelWings.png', 32, 32, 13);
+         game.load.spritesheet('angelw', 'img/charAngelWings.png', 32, 32, 13);
         
     },
 
@@ -30,14 +28,22 @@ const skyState = {
         map.events.onInputDown.add(function () {
             game.state.start('game');
         }, this);
-        game.add.sprite(400, 400, 'angelw');
-    },
-
+                         game.add.sprite(400, 400, 'angelw');
+        // Add Angel WIngs animations
+        
+        const angelwFrames = [];
+        for (let i = 1; i < 14; i++) {
+                   angelwFrames.push(i);
+            
+        
+        angelw.animations.add('play', angelwFrames, 10, true);
+            
     update: function () {
 
-        // Animate char: Angel WIngs
-        angelw.animations.play('play');
+        
         
     }
 
 };
+        // Animate char: Angel WIngs
+        angelw.animations.play('play');
