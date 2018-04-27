@@ -31,12 +31,23 @@ const menuState = {
     // Add logo
     logo = game.add.sprite(200, 200, 'logo');
       
+    const logoFrames = [];
+        
+    for (let i = 1; i < 29; i++) {
+        logoFrames.push(i);
+    }
+    
+    logo.animations.add('play', logoFrames, 10, true);
+      
   },
 
   /** 
    * Updates the screen each frame
    */
   update: function () {
+      
+    // Animate logo
+        logo.animations.play('play');
 
     // Check for mouse click and switch state to the game state when
     if (game.input.keyboard.isDown(Phaser.KeyCode.SPACEBAR)) {
