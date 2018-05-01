@@ -23,7 +23,7 @@ const skyState = {
         console.log("Sky!");
         
         // Add AngelW character
-        angelw = game.add.sprite(250, 250, 'angelw');
+        angelw = game.add.sprite(255, 255, 'angelw');
         
         // Add button to go to back to Map
         const map = game.add.sprite(50, 50, 'map');
