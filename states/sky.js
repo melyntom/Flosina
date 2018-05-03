@@ -15,6 +15,12 @@ const skyState = {
     },
 
     create: function () {
+         // Add some text
+    game.add.text(
+    325, 150,  // x, y position
+      "Hi, my name is Lily.", 
+      { fontSize: "16px", fill: "#fff" }
+        );
         
         game.world.setBounds(0, 0, 1042, 666);
         
