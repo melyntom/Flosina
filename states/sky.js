@@ -29,7 +29,7 @@ const skyState = {
         console.log("Sky!");
         
         // Add AngelW character
-        angelw = game.add.sprite(350, 275, 'angelw');
+        angelw = game.add.sprite(350, 310, 'angelw');
         
         angelw.scale.setTo(0.7);
         
