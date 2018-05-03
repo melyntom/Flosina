@@ -12,6 +12,11 @@ const gameState = {
         game.load.image('forest', 'img/forest.png');
         game.load.image('sky', 'img/sky.png');
         
+        game.load.image('upA', 'ShroooomsUp.gif');
+        game.load.image('downA', 'ShroooomsDown.gif');
+        game.load.image('leftA', 'ShroooomsLeft.gif');
+        game.load.image('rightA', 'ShroooomsRight.gif');
+        
     },
 
     create: function () {
