@@ -18,7 +18,7 @@ const skyState = {
          // Add some text
     game.add.text(
     325, 150,  // x, y position
-      "Hi, my name is Lily.", 
+      "Hi, my name is Angel Wings,nice to meet you!", 
       { fontSize: "16px", fill: "#fff" }
         );
         
