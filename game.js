@@ -27,7 +27,7 @@ function fadeArrows() {
 
 function fadeIn(sprite) {
             
-    game.add.tween(sprite).to({alpha: 100}, 175, Phaser.Easing.Linear.None, true);
+    game.add.tween(sprite).to({alpha: 1}, 175, Phaser.Easing.Linear.None, true);
             
 }
         
@@ -41,10 +41,10 @@ function fadeInArrows() {
 }
 
 function fullArrows() {
-    upA.alpha = 100;
-    downA.alpha = 100;
-    leftA.alpha = 100;
-    rightA.alpha = 100;
+    upA.alpha = 1;
+    downA.alpha = 1;
+    leftA.alpha = 1;
+    rightA.alpha = 1;
 }
 
 // Create the main game state class
@@ -89,7 +89,7 @@ const gameState = {
         rightA.scale.setTo(0.25);
         rightA.fixedToCamera = true;
         
-        // fullArrows();
+        fullArrows();
         
         
         
@@ -225,8 +225,8 @@ const gameState = {
             // down
             game.camera.y += 4;
             fadeArrows();
-        } /*else {
-            game.time.events.add(2000,
+        } else {
+            game.time.events.add(3000,
                                  
                 function () {
                     
@@ -240,7 +240,7 @@ const gameState = {
                 }
                                  
             );
-        }*/
+        }
         
     }
 
