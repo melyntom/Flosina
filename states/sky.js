@@ -15,12 +15,6 @@ const skyState = {
     },
 
     create: function () {
-         // Add some text
-    game.add.text(
-    325, 150,  // x, y position
-      "Hi, my name is Angel Wings,nice to meet you!", 
-      { fontSize: "16px", fill: "#fff" }
-        );
         
         game.world.setBounds(0, 0, 1042, 666);
         
@@ -29,16 +23,15 @@ const skyState = {
         console.log("Sky!");
         
         // Add AngelW character
-        angelw = game.add.sprite(300, 300, 'angelw');
+        angelw = game.add.sprite(350, 200, 'angelw');
         
-        angelw.scale.setTo(0.7);
+        angelw.scale.setTo(0.3);
         
         // Add button to go to back to Map
         const map = game.add.sprite(50, 50, 'map');
         map.anchor.set(0.5);
         map.inputEnabled = true;
         map.input.useHandCursor = true;  // Change cursor style on mouseover
-        map.fixedToCamera = true;
         
         // Add AngelW animations
         const angelwFrames = [];
