@@ -75,10 +75,16 @@ const gameState = {
 
         game.add.sprite(0, 0, 'backdrop');
     
-	game.sound.stopAll();
+	/* game.sound.stopAll();
 	music = game.add.audio('endlessJourney');
 	music.loop = true;
-	music.play();
+	music.play(); */
+	    
+	if (returned) {
+		music.pause();
+		music.name = "endlessJourney";
+		music.resume();
+	}
         
 
         // Game: 800x600
@@ -117,6 +123,7 @@ const gameState = {
         // Add a function to the button to be called when the button is clicked
         blurpia.events.onInputDown.add(function () {
 		returned = true;
+		music.pause();
             game.state.start('blurpia');
         }, this);
         
@@ -141,6 +148,7 @@ const gameState = {
         // Add a function to the button to be called when the button is clicked
         oceana.events.onInputDown.add(function () {
 		returned = true;
+		music.pause();
             game.state.start('oceana');
         }, this);
         
@@ -165,6 +173,7 @@ const gameState = {
         // Add a function to the button to be called when the button is clicked
         forest.events.onInputDown.add(function () {
 		returned = true;
+		music.pause();
             game.state.start('forest');
         }, this);
         
@@ -189,6 +198,7 @@ const gameState = {
         // Add a function to the button to be called when the button is clicked
         sky.events.onInputDown.add(function () {
 		returned = true;
+		music.pause();
             game.state.start('sky');
         }, this);
         
