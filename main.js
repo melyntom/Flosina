@@ -13,6 +13,10 @@ const height = 600;
 // Create the Phaser game object
 const game = new Phaser.Game(width, height, Phaser.AUTO, "example");
 
+
+game.load.audio('royal', ['music/stormholtsTears.mp3', 'music/stormholtTears.ogg']);
+
+
 // Add states to the game
 game.state.add("menu", menuState);
 game.state.add("game", gameState);
