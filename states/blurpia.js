@@ -27,14 +27,9 @@ const blurpiaState = {
         game.add.sprite(0, 0, 'backdrop');
         console.log("Blurple!!");
         
-        if (!returned) {
 		music = game.add.audio('royal');
+	   	 music.loop = true;
 		music.play();
-	} else {
-		music.pause();
-		music = game.add.audio('royal');
-		music.resume();
-	}
         
         // TEXT
     game.add.text(
