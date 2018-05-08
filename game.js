@@ -75,16 +75,9 @@ const gameState = {
 
         game.add.sprite(0, 0, 'backdrop');
     
-	// game.sound.stopAll();
-	    
-	if (!returned) {
-		music = game.add.audio('endlessJourney');
-		music.play();
-	} else {
-		music.pause();
-		music = game.add.audio('endlessJourney');
-		music.resume();
-	}
+	game.sound.stopAll();
+	music = game.add.audio('endlessJourney');
+	music.play();
         
 
         // Game: 800x600
