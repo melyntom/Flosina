@@ -25,8 +25,9 @@ const blurpiaState = {
         
         // Set backdrop
         game.add.sprite(0, 0, 'backdrop');
-        console.log("Blurple!!");
-        
+        console.log("Blurple!");
+	    
+       		 game.sound.stopAll();
 		music = game.add.audio('royal');
 	   	 music.loop = true;
 		music.play();
