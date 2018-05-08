@@ -14,6 +14,7 @@ const height = 600;
 const game = new Phaser.Game(width, height, Phaser.AUTO, "example");
 
 
+game.load.audio('endlessJourney', ['music/endlessJourney.mp3', 'music/endlessJourney.ogg']);
 game.load.audio('royal', ['music/stormholtsTears.mp3', 'music/stormholtTears.ogg']);
 
 
