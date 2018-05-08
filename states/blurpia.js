@@ -4,8 +4,6 @@
 var mellie;
 var music;
 
-var returned = false;
-
 const blurpiaState = {
 
     preload: function () {
