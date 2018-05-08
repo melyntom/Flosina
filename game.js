@@ -10,6 +10,8 @@ var rightA;
 var moved = false;
 var returned = false;
 
+var musicTime = 0;
+
 function fade(sprite) {
             
     game.add.tween(sprite).to({alpha: 0}, 175, Phaser.Easing.Linear.None, true);
@@ -81,9 +83,9 @@ const gameState = {
 	music.play(); */
 	    
 	if (returned) {
-		music.pause();
 		music.name = "endlessJourney";
-		music.resume();
+		music.markers.currentTime = musicTime;
+		music.play();
 	} else {
 		music = game.add.audio('endlessJourney');
 		music.play();
@@ -125,6 +127,7 @@ const gameState = {
 
         // Add a function to the button to be called when the button is clicked
         blurpia.events.onInputDown.add(function () {
+		musicTime = music.markers.currentTime;
 		returned = true;
 		music.pause();
             game.state.start('blurpia');
