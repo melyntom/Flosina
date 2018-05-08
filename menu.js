@@ -24,7 +24,7 @@ const menuState = {
     game.input.mouse.capture = true;
       
     // Add logo
-    logo = game.add.sprite(157, -28, 'logo');
+    logo = game.add.sprite(157, 28, 'logo');
 
     var style = { font: "bold 26px Courier", fill: "#fff", boundsAlignH: "center", boundAlignV: "middle" };
       
