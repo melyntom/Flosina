@@ -66,7 +66,7 @@ const blurpiaState = {
 
         // Add a function to the button to be called when the button is clicked
         map.events.onInputDown.add(function () {
-		music.pause();
+		music.stop();
             game.state.start('game');
         }, this);
         
