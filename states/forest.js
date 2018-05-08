@@ -47,7 +47,7 @@ const forestState = {
         
         // Even more text
     game.add.text(
-    325, 170, // x, y position
+    325, 180, // x, y position
         "I like to make butter and bake.",
         { fontSize: "16px", fill: "#fff"}
     );
