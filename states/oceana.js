@@ -37,7 +37,7 @@ const oceanaState = {
         
         // Add some text
     game.add.text(
-    600, 300,  // x, y position
+    600, 150,  // x, y position
       "...in a world of pure imagination...", 
       { fontSize: "16px", fill: "#fff" }
         );
