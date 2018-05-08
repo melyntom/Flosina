@@ -1,5 +1,6 @@
 var map;
 var cursors;
+var music;
 
 var upA;
 var downA;
@@ -62,6 +63,8 @@ const gameState = {
         game.load.image('downA', 'img/ShroooomsDown.gif');
         game.load.image('leftA', 'img/ShroooomsLeft.gif');
         game.load.image('rightA', 'img/ShroooomsRight.gif');
+                
+		game.load.audio('endlessJourney', ['music/endlessJourney.mp3', 'music/endlessJourney.ogg']);
         
     },
 
@@ -70,6 +73,10 @@ const gameState = {
         game.world.setBounds(0, 0, 1920, 1080);
 
         game.add.sprite(0, 0, 'backdrop');
+		
+		music = game.add.audio('boden');
+    
+		music.play();
         
 
         // Game: 800x600
@@ -226,7 +233,7 @@ const gameState = {
             game.camera.y += 4;
             fadeArrows();
         } else {
-            game.time.events.add(3000,
+            game.time.events.add(5000,
                                  
                 function () {
                     
