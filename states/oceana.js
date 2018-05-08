@@ -21,6 +21,27 @@ const oceanaState = {
         game.add.sprite(0, 0, 'backdrop');
         console.log("Oceana!");
         
+        // Add some text
+    game.add.text(
+    200, 100,  // x, y position
+      "Come with me...", 
+      { fontSize: "16px", fill: "#fff" }
+        );
+        
+        // Add some text
+    game.add.text(
+    400, 200,  // x, y position
+      "...and you'll be...", 
+      { fontSize: "16px", fill: "#fff" }
+        );
+        
+        // Add some text
+    game.add.text(
+    600, 400,  // x, y position
+      "...in a world of pure imagination...", 
+      { fontSize: "16px", fill: "#fff" }
+        );
+        
          // Add some text
     game.add.text(
     350, 400,  // x, y position
@@ -38,21 +59,7 @@ const oceanaState = {
         // Add some more text
     game.add.text(
     700, 560,  // x, y position
-      "My hobbies include:", 
-      { fontSize: "16px", fill: "#fff" }
-        );
-        
-        // Add some more text
-    game.add.text(
-    700, 580,  // x, y position
-      "- Singing", 
-      { fontSize: "16px", fill: "#fff" }
-        );
-        
-        // Add some more text
-    game.add.text(
-    700, 600,  // x, y position
-      "- Luring people to thier death", 
+      "My hobbies include:\n- Singing\n- Luring People to Their Deaths", 
       { fontSize: "16px", fill: "#fff" }
         );
         
