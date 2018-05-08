@@ -63,6 +63,8 @@ const gameState = {
         game.load.image('downA', 'img/ShroooomsDown.gif');
         game.load.image('leftA', 'img/ShroooomsLeft.gif');
         game.load.image('rightA', 'img/ShroooomsRight.gif');
+	    
+	game.load.audio('endlessJourney', ['music/endlessJourney.mp3', 'music/endlessJourney.ogg']);
         
     },
 
