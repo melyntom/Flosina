@@ -11,7 +11,7 @@ const menuState = {
    */
   preload : function () {
       
-      game.load.spritesheet('logo', 'img/MagicalCrystal.png', 500, 500, 28);
+      game.load.spritesheet('logo', 'img/MagicalCrystal.png', 600, 600, 28);
       
   },
 
