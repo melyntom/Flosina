@@ -61,22 +61,8 @@ const forestState = {
         
         // TEXT
     game.add.text(
-    160, 600, // x, y position
-        "Fun fact about me:",
-        { fontSize: "16px", fill: "#fff"}
-    );
-        
-        // TEXT
-    game.add.text(
-    160, 615, // x, y position
-        "I have Heterochromia.",
-        { fontSize: "16px", fill: "#fff"}
-    );
-        
-        // TEXT
-    game.add.text(
-    160, 630, // x, y position
-        "My left eye is yellow and my right is blue.",
+    160, 580, // x, y position
+        "Fun fact about me:\nI have Heterochromia.\nMy left eye is yellow and my right is blue.",
         { fontSize: "16px", fill: "#fff"}
     );
         
