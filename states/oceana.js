@@ -58,7 +58,7 @@ const oceanaState = {
         
         // Add some more text
     game.add.text(
-    700, 560,  // x, y position
+    750, 560,  // x, y position
       "My hobbies include:\n- Singing\n- Luring People to Their Deaths", 
       { fontSize: "16px", fill: "#fff" }
         );
