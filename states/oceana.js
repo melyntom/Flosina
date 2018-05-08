@@ -30,7 +30,7 @@ const oceanaState = {
         
         // Add some text
     game.add.text(
-    500, 200,  // x, y position
+    450, 200,  // x, y position
       "...and you'll be...", 
       { fontSize: "16px", fill: "#fff" }
         );
