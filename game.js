@@ -82,14 +82,12 @@ const gameState = {
 	music.loop = true;
 	music.play(); */
 	    
+	music = game.add.audio('endlessJourney');
+	music.loop = true;
 	if (returned) {
-		music.name = "endlessJourney";
 		music.markers.currentTime = musicTime;
-		music.play();
-	} else {
-		music = game.add.audio('endlessJourney');
-		music.play();
 	}
+	music.play();
         
 
         // Game: 800x600
