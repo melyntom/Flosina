@@ -33,14 +33,7 @@ const blurpiaState = {
         // TEXT
     game.add.text(
     50, 600, // x, y position
-        "My name is Mellie, and I am the Queen",
-        { fontSize: "16px", fill: "#fff"}
-    );
-        
-        // TEXT
-    game.add.text(
-    50, 620, // x, y position
-        " of Blurpia!",
+        "My name is Mellie, and I am the Queen\nof Blurpia!",
         { fontSize: "16px", fill: "#fff"}
     );
         
