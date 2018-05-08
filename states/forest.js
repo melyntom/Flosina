@@ -33,7 +33,7 @@ const forestState = {
         
         // Add some text
     game.add.text(
-    325, 135,  // x, y position
+    328, 135,  // x, y position
       "Hi, my name is Lily.\nI'm a wolf hybrid and I live in this little cottage.\nI like to make butter and bake.\nI also enjoy gardening.", 
       { fontSize: "16px", fill: "#fff" }
         );
