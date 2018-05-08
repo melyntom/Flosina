@@ -64,7 +64,7 @@ const gameState = {
         game.load.image('leftA', 'img/ShroooomsLeft.gif');
         game.load.image('rightA', 'img/ShroooomsRight.gif');
                 
-		game.load.audio('endlessJourney', ['music/endlessJourney.mp3', 'music/endlessJourney.ogg']);
+	game.load.audio('endlessJourney', ['music/endlessJourney.mp3', 'music/endlessJourney.ogg']);
         
     },
 
@@ -74,9 +74,9 @@ const gameState = {
 
         game.add.sprite(0, 0, 'backdrop');
 		
-		music = game.add.audio('boden');
+	music = game.add.audio('endlessJourney');
     
-		music.play();
+	music.play();
         
 
         // Game: 800x600
