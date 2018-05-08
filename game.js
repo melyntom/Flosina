@@ -71,10 +71,9 @@ const gameState = {
         game.world.setBounds(0, 0, 1920, 1080);
 
         game.add.sprite(0, 0, 'backdrop');
-		
-	music = game.add.audio('endlessJourney');
     
 	music.pause();
+	music = game.add.audio('endlessJourney');
 	music.play();
         
 
