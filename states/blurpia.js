@@ -4,6 +4,8 @@
 var mellie;
 var music;
 
+var returned = false;
+
 const blurpiaState = {
 
     preload: function () {
@@ -25,9 +27,14 @@ const blurpiaState = {
         game.add.sprite(0, 0, 'backdrop');
         console.log("Blurple!");
         
-        game.sound.stopAll();
-        music = game.add.audio('royal');
-        music.play();
+        if (!return) {
+		music = game.add.audio('royal');
+		music.play();
+	} else {
+		music.pause();
+		music = game.add.audio('royal');
+		music.resume();
+	}
         
         // TEXT
     game.add.text(
@@ -66,6 +73,8 @@ const blurpiaState = {
         map.events.onInputDown.add(function () {
             game.state.start('game');
         }, this);
+        
+        returned = true;
 
     },
 
