@@ -36,6 +36,20 @@ const blurpiaState = {
         "My name is Mellie, and I am the Queen\nof Blurpia!",
         { fontSize: "16px", fill: "#fff"}
     );
+	    
+	// TEXT
+   	 game.add.text(
+  	  600, 200, // x, y position
+     	   "My favorite color is, in fact,\nthat of the lengendary blurple.",
+      	  { fontSize: "16px", fill: "#fff"}
+    	);
+	    
+	// TEXT
+	    game.add.text(
+	    500, 400, // x, y position
+		"If you ask me, life is most \ninteresting when traveling the world.\nHave you ever been to Oceana?",
+		{ fontSize: "16px", fill: "#fff"}
+	    );
         
         // Add Mellie character
         mellie = game.add.sprite(100, 320, 'mellie');
