@@ -4,6 +4,7 @@
 //add scroling feature
 
 var lily;
+var music;
 
 const forestState = {
 
@@ -13,6 +14,8 @@ const forestState = {
         game.load.image('map', 'img/main.png');
         
         game.load.spritesheet('lily', 'img/Lily.png', 256, 256, 12);
+        
+        game.load.audio('forestStream', ['music/forestStream.mp3', 'music/forestStream.ogg']);
     },
     
     create: function () {
@@ -22,6 +25,11 @@ const forestState = {
         // Set backdrop
         game.add.sprite(0, 0, 'backdrop');
         console.log("Forest!");
+        
+        game.sound.stopAll();
+        music = game.add.audio('forestStream');
+        music.loop = true;
+        music.play();
         
         // Add some text
     game.add.text(
