@@ -13,8 +13,6 @@ const blurpiaState = {
         
         game.load.spritesheet('mellie', 'img/Mellie.png', 250, 250, 13);
         
-        game.load.audio('royal', ['music/stormholtsTears.mp3', 'music/stormholtTears.ogg']);
-        
     },
 
     create: function () {
