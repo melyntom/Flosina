@@ -40,21 +40,21 @@ const forestState = {
         
         // Add some more text
     game.add.text(
-    325, 150,  // x, y position
+    325, 155,  // x, y position
       "I'm a wolf hybrid and I live in this little cottage.", 
       { fontSize: "16px", fill: "#fff" }
         );
         
         // Even more text
     game.add.text(
-    325, 165, // x, y position
+    325, 170, // x, y position
         "I like to make butter and bake.",
         { fontSize: "16px", fill: "#fff"}
     );
         
         // Even more text
     game.add.text(
-    325, 178, // x, y position
+    325, 198, // x, y position
         "I also enjoy gardening.",
         { fontSize: "16px", fill: "#fff"}
     );
