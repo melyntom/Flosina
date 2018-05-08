@@ -123,7 +123,7 @@ const gameState = {
         // Add a function to the button to be called when the button is clicked
         blurpia.events.onInputDown.add(function () {
 		returned = true;
-		music.pause();
+		// music.pause();
             game.state.start('blurpia');
         }, this);
         
@@ -148,7 +148,7 @@ const gameState = {
         // Add a function to the button to be called when the button is clicked
         oceana.events.onInputDown.add(function () {
 		returned = true;
-		music.pause();
+		// music.pause();
             game.state.start('oceana');
         }, this);
         
@@ -173,7 +173,7 @@ const gameState = {
         // Add a function to the button to be called when the button is clicked
         forest.events.onInputDown.add(function () {
 		returned = true;
-		music.pause();
+		// music.pause();
             game.state.start('forest');
         }, this);
         
@@ -198,7 +198,7 @@ const gameState = {
         // Add a function to the button to be called when the button is clicked
         sky.events.onInputDown.add(function () {
 		returned = true;
-		music.pause();
+		// music.pause();
             game.state.start('sky');
         }, this);
         
