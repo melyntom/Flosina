@@ -8,9 +8,6 @@ var leftA;
 var rightA;
 
 var moved = false;
-var returned = false;
-
-var musicTime = 0;
 
 function fade(sprite) {
             
@@ -77,16 +74,9 @@ const gameState = {
 
         game.add.sprite(0, 0, 'backdrop');
     
-	/* game.sound.stopAll();
+	game.sound.stopAll();
 	music = game.add.audio('endlessJourney');
 	music.loop = true;
-	music.play(); */
-	    
-	music = game.add.audio('endlessJourney');
-	music.loop = true;
-	if (returned) {
-		music.markers.currentTime = musicTime;
-	}
 	music.play();
         
 
