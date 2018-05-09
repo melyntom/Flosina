@@ -40,7 +40,7 @@ const menuState = {
     text2.setTextBounds(0, game.world.centerY + 260, 800, 100);
       
     // Add logo
-    logo = game.add.sprite(125, 0, 'logo');
+    logo = game.add.sprite(125, -28, 'logo');
       
     const logoFrames = [];
         
