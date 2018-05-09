@@ -25,7 +25,7 @@ const oceanaState = {
         console.log("Oceana!");
         
         game.sound.stopAll();
-		music = game.add.audio('oceana');
+		music = game.add.audio('ocean');
 	   	music.loop = true;
 		music.play();
         
