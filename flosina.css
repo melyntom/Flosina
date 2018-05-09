@@ -1,4 +1,12 @@
-* {
+body {
     background: black;
+    display: flex;
+}
+
+html, body {
+    height: 100%;
+}
+
+canvas {
     margin: auto;
 }

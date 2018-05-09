@@ -22,8 +22,6 @@ const menuState = {
 
     // Enable mouse
     game.input.mouse.capture = true;
-      
-    console.log("Hi!");
 
     var style = { font: "bold 26px Courier", fill: "#fff", boundsAlignH: "center", boundAlignV: "middle" };
       
