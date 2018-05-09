@@ -99,12 +99,12 @@ const oceanaState = {
             game.state.start('game');
         }, this);
 
+        // Animate char: Mia
+        mia.animations.play('play');
+
     },
 
     update: function () {
-
-        // Animate char: Mia
-        mia.animations.play('play');
         
         var x = game.input.mousePointer.x;
         var y = game.input.mousePointer.y;
