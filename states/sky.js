@@ -12,6 +12,8 @@ const skyState = {
         
          game.load.spritesheet('angelw', 'img/AngelWings.png', 256, 256, 13);
         
+        game.load.audio('skyMusic', ['music/sky.mp3', 'music/sky.ogg']);
+        
     },
 
     create: function () {
@@ -21,6 +23,11 @@ const skyState = {
         // Set backdrop
         game.add.sprite(0, 0, 'backdrop');
         console.log("Sky!");
+        
+        game.sound.stopAll();
+		music = game.add.audio('skyMusic');
+	   	music.loop = true;
+		music.play();
         
         // Add AngelW character
         angelw = game.add.sprite(305, 130, 'angelw');

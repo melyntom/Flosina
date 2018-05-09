@@ -10,7 +10,6 @@ const menuState = {
    * Loads game assets (images, sounds, tilemaps, etc)
    */
   preload : function () {
-      
       game.load.spritesheet('logo', 'img/MagicalCrystal.png', 600, 600, 28);
       
   },
