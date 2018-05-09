@@ -78,12 +78,12 @@ const blurpiaState = {
         
         returned = true;
 
+        // Animate char: Mellie
+        mellie.animations.play('play');
+
     },
 
     update: function () {
-
-        // Animate char: Mellie
-        mellie.animations.play('play');
         
         var x = game.input.mousePointer.x;
         var y = game.input.mousePointer.y;
