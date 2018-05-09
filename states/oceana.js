@@ -2,6 +2,7 @@
 // Home to Mia the Mermaid / Siren
 
 var mia;
+var music;
 
 const oceanaState = {
 
@@ -12,6 +13,8 @@ const oceanaState = {
         
         game.load.spritesheet('mia', 'img/MermaidHelen.png', 256, 256, 13);
         
+        game.load.audio('ocean', ['music/oceana.mp3', 'music/oceana.ogg']);
+        
     },
 
     create: function () {
@@ -20,6 +23,11 @@ const oceanaState = {
         
         game.add.sprite(0, 0, 'backdrop');
         console.log("Oceana!");
+        
+        game.sound.stopAll();
+		music = game.add.audio('oceana');
+	   	music.loop = true;
+		music.play();
         
         // Add some text
     game.add.text(
