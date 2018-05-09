@@ -147,13 +147,13 @@ const skyState = {
         map.events.onInputDown.add(function () {
             game.state.start('game');
         }, this);
+
+        // Animate char: Angel Wings
+        angelw.animations.play('play');
         
     },
             
     update: function () {
-
-        // Animate char: Angel WIngs
-        angelw.animations.play('play');
         
         var x = game.input.mousePointer.x;
         var y = game.input.mousePointer.y;
