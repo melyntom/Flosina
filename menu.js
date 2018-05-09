@@ -23,8 +23,7 @@ const menuState = {
     // Enable mouse
     game.input.mouse.capture = true;
       
-    // Add logo
-    logo = game.add.sprite(157, 28, 'logo');
+    console.log("Hi!");
 
     var style = { font: "bold 26px Courier", fill: "#fff", boundsAlignH: "center", boundAlignV: "middle" };
       
@@ -42,6 +41,9 @@ const menuState = {
     text1.setTextBounds(0, game.world.centerX + 40, 800, 100);
       
     text2.setTextBounds(0, game.world.centerX + 85, 800, 100);
+      
+    // Add logo
+    logo = game.add.sprite(0, 0, 'logo');
       
     const logoFrames = [];
         
