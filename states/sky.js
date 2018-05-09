@@ -2,6 +2,7 @@
 // Home to Aidan's Character
 
 var angelw;
+var music;
 
 const skyState = {
 
@@ -18,7 +19,8 @@ const skyState = {
 
     create: function () {
          
-        
+        game.world.setBounds(0, 0, 1042, 666);
+	    
         // Set backdrop
         game.add.sprite(0, 0, 'backdrop');
         console.log("Sky!");
