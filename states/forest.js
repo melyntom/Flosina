@@ -94,14 +94,14 @@ const forestState = {
             game.state.start('game');
         }, this);
 
+        // Animate char: Lily
+        lily.animations.play('play');
+
     },
 
     update: function () {
         
         game.world.setBounds(0, 0, 1042, 666);
-
-        // Animate char: Lily
-        lily.animations.play('play');
         
         var x = game.input.mousePointer.x;
         var y = game.input.mousePointer.y;
