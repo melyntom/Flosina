@@ -4,4 +4,4 @@
 
 (We added "-ina" to make it sound more magical.)
 
-Mission Bit Group Project for the 2018 Spring Semester
+Mission Bit Group Project for the Spring 2018 Semester
