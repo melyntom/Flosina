@@ -2,9 +2,9 @@
 
 # On each state:
 
-* Return to Map Button
+* Return to map button
 
-* Character Sprite w/ animation
+* Character sprite w/ animation
 
 * Click on charcter to view information
 
