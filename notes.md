@@ -1,6 +1,4 @@
-1920px Width
-
-1080px Height
+1920px width by 1080px height
 
 # On each state:
 
